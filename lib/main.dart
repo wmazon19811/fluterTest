@@ -65,8 +65,9 @@ class _MyAppState extends State<MyApp>  {
                         child: Image(image: NetworkImage(items[index]["media"]["m"].toString(),),
                         fit: BoxFit.fill,
                         ),
-                      )
-                      
+                        
+                      ),
+                      Text(items[index]["tags"]),
                     ],
                   )
                 );
